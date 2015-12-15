@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/floating_tip_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/floating_tip_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/init_settings_item_auto_start_flyme"
+            android:textColor="@android:color/white"
+            android:lineSpacingMultiplier="1.2"
+            android:textSize="18sp" />
+
+        <!-- 将来可添加确定按钮？ -->
+    </LinearLayout>
+
+</RelativeLayout>

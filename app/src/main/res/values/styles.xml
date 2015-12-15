@@ -1,0 +1,89 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- ActionBar的背景颜色 -->
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorAccent">@color/primary_green</item>
+
+        <!-- Remove shadow below action bar Android < 5.0 -->
+        <!-- Ref: http://stackoverflow.com/a/27203224/4026052 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+
+        <!-- Remove shadow below action bar Android >= 5.0 -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <!-- Support library compatibility -->
+        <item name="elevation">0dp</item>
+    </style>
+
+    <!-- Activity Transaction Animation -->
+    <style name="AnimationActivity" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/open_slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/open_slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/back_slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/back_slide_out_right</item>
+    </style>
+
+    <style name="AppTheme.SplashActivity">
+        <item name="android:windowBackground">?attr/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.MainActivity">
+        <!-- 使用自定义Toolbar -->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Translucent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Note that we use the base animation style here (that is no
+             animations) because we really have no idea how this kind of
+             activity will be used. -->
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <!-- Theme for Preference -->
+    <style name="AppTheme.Preference">
+        <!-- 自定义CheckBox与TextViewSeparator -->
+        <item name="android:checkboxStyle">@style/MyCheckBox</item>
+        <item name="android:listSeparatorTextViewStyle">@style/MyListSeparator</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="">
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+    <style name="MyDialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MyShadowText">
+        <item name="android:shadowColor">#80072300</item>
+        <item name="android:shadowDx">10</item>
+        <item name="android:shadowDy">10</item>
+        <item name="android:shadowRadius">6</item>
+    </style>
+
+    <style name="LockEmergencyUnlockBtnStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_own_bg"
+    android:orientation="vertical"
+    android:padding="1dp" >
+
+    <!-- 标题栏 - -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_own_title_bg" >
+
+        <TextView
+            android:id="@+id/dialog_own_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:text="@string/dialog_own_title_text"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- "?"按钮 -->
+
+        <ImageButton
+            android:id="@+id/dialog_own_title_btn_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/dialog_own_title_text"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/dialog_own_title_btn_help" />
+
+        <!-- 右上角的关闭按钮 -->
+
+        <ImageButton
+            android:id="@+id/dialog_own_title_btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/dialog_common_btn_close_bg" />
+    </RelativeLayout>
+
+    <!-- 用户更换背景，显示标题栏帮助按钮对应的内容 -->
+    <FrameLayout
+        android:id="@+id/dialog_own_more_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <!-- 更多 -->
+        <GridView
+            android:id="@+id/dialog_own_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:paddingBottom="10dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="10dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" />
+        
+        <!-- 帮助 -->
+        <ImageView
+            android:id="@+id/dialog_own_more_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/dialog_own_more_tip" 
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+    </FrameLayout>
+
+</LinearLayout>

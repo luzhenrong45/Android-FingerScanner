@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">FingerScanner</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_help">Help</string>
+
+    <!-- Drawer Action Items -->
+    <string name="drawer_action_share">Share</string>
+    <string name="drawer_action_about_us">About Us</string>
+    <string name="drawer_action_feedback">Feedback</string>
+    <string name="drawer_action_our_app">Our Apps</string>
+
+    <!-- 反馈界面相关 -->
+    <string name="feedback_text">Thanks for using FingerScanner. We welcome your comments and feedback on your experience of our app, whether those are good or bad.</string>
+    <string name="feedback_contact">Contact Info (optional)</string>
+    <string name="feedback_contact_hit">QQ/Email</string>
+    <string name="feedback_contet">Feedback Content</string>
+    <string name="feedback_contet_hit">I have a question about...</string>
+    <string name="feedback_button">Feedback</string>
+    <string name="warning_feedback_contact_length_30">Your contact info seems invalid</string>
+    <string name="warning_feedback_content_null">Forget to compose your feedback?</string>
+    <string name="warning_feedback_content_length_100">Wait a minute, your feedback is longer than that I can process</string>
+    <string name="feedback_successful">Thank you!\nWe have received your feedback.</string>
+    <string name="network_not_avaliable">Network failure。</string>
+
+    <!-- 关于界面 -->
+    <string name="about_content">Unlock your phone with your \'fingerprint\'</string>
+    <string name="website">Website</string>
+    <string name="powered_by">Powered by</string>
+
+    <!-- 主界面 -->
+    <string name="show_lock">Show LockScreen</string>
+    <string name="settings">Settings</string>
+    <string name="more">More</string>
+
+    <!-- share intent -->
+    <string name="share_intent_subject">Share</string>
+    <string name="share_intent_text">Unlock your android phone with your "fingerprint", download：http://cn.anruanjian.com/soft/detail/15?stype1=share_20&amp;stype2=fignerscanner_60</string>
+
+    <!-- category - 解锁设置 -->
+    <string name="pref_key_cate_unlock_title">Unlock</string>
+
+    <!-- category - 更多设置 -->
+    <string name="pref_key_cate_more_title">More</string>
+
+    <!-- preference - 锁屏开关 -->
+    <string name="pref_lock_switch_title">Lock Switch</string>
+
+    <!-- preference - 预览锁屏界面 -->
+    <string name="pref_key_preview_title">Show LockScreen</string>
+
+    <!-- preference - 解锁教程 -->
+    <string name="pref_key_help_title">Help</string>
+
+    <!-- preference - 个性设置 -->
+    <string name="pref_key_customize_title">Customize</string>
+
+    <!-- preference - 高级设置 -->
+    <string name="pref_key_advanced_title">Advanced</string>
+
+    <!-- preference - 初始设置 -->
+    <string name="pref_key_init_settings_title">Initialized</string>
+
+    <string name="pref_key_sound_and_vibration">Sound &amp; Vibration</string>
+    <string name="pref_key_lock_display">Lock Display</string>
+
+    <!-- preference - Unlock Condition(times) -->
+    <string name="unlock_times_title">Unlock Condition(times)</string>
+    <string name="unlock_times_dialog_message">Current times:</string>
+    <string name="unlock_times_summary">Beep/vibration times to unlock phone</string>
+
+    <!-- preference - Auto Start -->
+    <string name="cb_autostart_title">Auto Start</string>
+    <string name="cb_autostart_summary">Start FingerScanner with phone boot</string>
+
+    <!-- preference - App Update -->
+    <string name="cb_tcu_notify_cku_title">App Update</string>
+    <string name="cb_tcu_notify_cku_summary">Show notification when new version available</string>
+
+    <!-- preference - BEEP Assistance -->
+    <string name="cb_scanning_sound_title">BEEP Assistance</string>
+    <string name="cb_scanning_sound_summary">Enable BEEP when scanning</string>
+
+    <!-- preference - Vibrate Assistance -->
+    <string name="cb_vibrate_title">Vibrate Assistance</string>
+    <string name="cb_vibrate_summary">Enable vibration when scanning</string>
+
+    <!-- preference - Choose Date Format -->
+    <string name="date_format_title">Date Format</string>
+    <string name="date_format_summary">Choose the date format you prefer</string>
+
+    <!-- preference - Choose Time Format -->
+    <string name="time_format_title">Time Format</string>
+    <string name="time_format_summary">Choose the time format you prefer</string>
+
+    <!-- preference - 天气预报 -->
+    <string name="cb_weather_title">Weather</string>
+    <string name="cb_weather_summary">Enable weather forecast on lock screen</string>
+
+    <!-- preference - 解锁成功动画 -->
+    <string name="pref_key_lock_anim_type_title">Unlock Animation</string>
+    <string name="pref_key_lock_anim_type_summary">Choose the unlock anim style you prefer</string>
+
+    <!-- preference - 解锁文字动画 -->
+    <string name="pref_key_lock_text_anim_type_title">Text Animation</string>
+    <string name="pref_key_lock_text_anim_type_summary">Choose the text anim style you prefer</string>
+
+    <string name="more_link">http://en.anruanjian.com/?stype1=about_20&amp;stype2=fingerscanner_65</string>
+
+    <!-- 老版本链接 -->
+    <string name="old_version_link_fingerscanner">http://cn.anruanjian.com/soft/detail/59/?stype1=oldversion&amp;stype2=fingerprint</string>
+    <string name="old_version_link_flashlight">http://cn.anruanjian.com/soft/detail/86/?stype1=oldversion&amp;stype2=fingerprint</string>
+    <string name="old_version_link_qrcode">http://cn.anruanjian.com/soft/detail/197/?stype1=oldversion&amp;stype2=fingerprint</string>
+    <string name="old_version_link_fbi">http://cn.anruanjian.com/soft/detail/454/?stype1=oldversion&amp;stype2=fingerprint</string>
+    <string name="old_version_link_crystaltimer">http://cn.anruanjian.com/soft/detail/432/?stype1=oldversion&amp;stype2=fingerprint</string>
+
+    <!-- 初始设置提示文字 -->
+    <string name="init_settings_item_auto_start_flyme">❶ 请进入「权限管理」\n❷ 请开启「自启动」开关\n * 注意软件本身也需开启\n&#160;&#160;&#160;&#160;开机自启动</string>
+    <string name="init_settings_item_auto_start_xiaomi">请找到「指纹解锁」选择开启\n * 注意软件本身也需开启\n&#160;&#160;&#160;&#160;开机自启动</string>
+    <string name="init_settings_item_system_lock_other">请选择「无」模式</string>
+    <string name="init_settings_item_system_lock_xiaomi">❶ 请开启「开启开发者选项」\n❷ 请开启「直接进入系统」\n * 需要先关闭系统屏幕密码</string>
+    <string name="init_settings_item_floating_window_xiaomi"> 请开启「显示悬浮窗」</string>
+
+    <string name="init_settings_title_default">初始设置</string>
+    <string name="init_settings_title_xiaomi">小米用户初始设置</string>
+    <string name="init_settings_title_meizu">魅族用户初始设置</string>
+
+    <string name="init_settings_confirm_message_other"><Data><![CDATA[<font color="#f66800">初始设置未完成</font>，指纹解锁可能无法正常工作，确定跳过初始设置吗？]]></Data></string>
+    <string name="init_settings_confirm_message_xiaomi"><Data><![CDATA[<font color="#f66800">由于小米系统限制，请务必完成初始设置</font>，否则指纹解锁可能无法正常工作，将出现以下情况：<br/>1. 点击Home键跳过指纹解锁<br/>2. 手机开机后无法自启动指纹解锁<br/>3. 被清理后无法自动启动指纹解锁]]></Data></string>
+
+    <string name="init_settings_confirm_ok">我已完成</string>
+    <string name="init_settings_confirm_back">返回设置</string>
+
+</resources>

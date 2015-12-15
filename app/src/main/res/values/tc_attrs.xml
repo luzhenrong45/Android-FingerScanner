@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="THINKCHANGE_AD_SDK_ID">0</string>
+    <string name="THINKCHANGE_APP_LANG_DEF">auto</string>
+    <string name="TC_DOMAIN">fingerprintandroidapp.com</string>
+    <string name="TC_DOMAIN_BAK">tcjpback.com</string>
+</resources>

@@ -1,0 +1,48 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="pref_key_cate_unlock"
+        android:title="@string/pref_key_cate_unlock_title">
+        <!-- 设置的key兼容老版本 -->
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:icon="@drawable/pref_lock_switch"
+            android:key="cb_enable"
+            android:title="@string/pref_lock_switch_title" />
+        <!-- 解锁条件(次数) -->
+        <mobi.thinkchange.android.fingerscannercn.preference.SeekBarPreference
+            android:defaultValue="3"
+            android:dialogMessage="@string/unlock_times_dialog_message"
+            android:icon="@drawable/pref_lock_condition"
+            android:key="unlock_times"
+            android:persistent="true"
+            android:max="10"
+            android:title="@string/unlock_times_title" />
+        <Preference
+            android:icon="@drawable/pref_preview"
+            android:key="pref_key_preview"
+            android:title="@string/pref_key_preview_title"></Preference>
+        <Preference
+            android:icon="@drawable/pref_help"
+            android:key="pref_key_help"
+            android:title="@string/pref_key_help_title"></Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_key_cate_more"
+        android:title="@string/pref_key_cate_more_title">
+        <Preference
+            android:icon="@drawable/pref_customize"
+            android:key="pref_key_customize"
+            android:title="@string/pref_key_customize_title"></Preference>
+        <Preference
+            android:icon="@drawable/pref_advanced"
+            android:key="pref_key_advanced"
+            android:title="@string/pref_key_advanced_title"></Preference>
+        <Preference
+            android:icon="@drawable/pref_init_settings"
+            android:key="pref_key_init_settings"
+            android:title="@string/pref_key_init_settings_title"></Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

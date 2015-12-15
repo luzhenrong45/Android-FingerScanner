@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dialog_cku_bg"
+    android:padding="0dp" >
+
+    <!-- 标题 - -->
+
+    <RelativeLayout
+        android:id="@+id/dialog_list_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#0067c4" >
+
+        <TextView
+            android:id="@+id/dialog_list_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:textColor="@android:color/white"
+            android:text="@string/dialog_list_title_text"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/dialog_list_title_btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dialog_common_btn_close_bg" />
+    </RelativeLayout>
+
+    <!-- list广告内容 -->
+
+    <ListView
+        android:id="@+id/dialog_list_more"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_list_title"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:divider="@drawable/dialog_list_seperator"
+        android:layoutAnimation="@anim/tcu_layout_normal_fade_in"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+</RelativeLayout>

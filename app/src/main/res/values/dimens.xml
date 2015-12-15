@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--
+         Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html
+    -->
+    <dimen name="default_navigation_drawer_width">304dp</dimen>
+
+    <!--
+    	Per the design guidelines, navigation drawer should be equal to the width of the screen minus the height of the action bar
+    	http://www.google.com/design/spec/patterns/navigation-drawer.html
+    -->
+    <dimen name="navigation_drawer_gap_to_edge_of_screen">56dp</dimen>
+
+    <dimen name="drawer_head_height">138dp</dimen>
+
+    <dimen name="horizontal_divider_height">2px</dimen>
+
+    <dimen name="light_switch_button_top">190dp</dimen>
+
+    <dimen name="course_text_margin">5dp</dimen>
+
+</resources>

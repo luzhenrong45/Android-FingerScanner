@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_ex_bg_with_hide"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp" >
+
+    <!-- 标题 - 确定退出软件？ -->
+    <ImageView 
+        android:id="@+id/dialog_ex_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dialog_ex_title"
+        />
+    
+    <LinearLayout
+        android:id="@+id/dialog_ex_btn_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/dialog_ex_title"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        >
+        
+        <!-- “确定”按钮 -->
+        <ImageButton
+            android:id="@+id/dialog_ex_btn_ok"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dialog_ex_btn_ok"
+            android:background="@drawable/dialog_ex_btn_cancel_selector"
+            />
+        
+        <View 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            />
+        
+        <!-- 取消按钮 -->
+        <ImageButton
+            android:id="@+id/dialog_ex_btn_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dialog_ex_btn_cancel"
+            android:background="@drawable/dialog_ex_btn_cancel_selector"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/dialog_ex_btn_hide_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_ex_btn_area"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <!-- “隐藏”按钮 -->
+        <ImageButton
+            android:id="@+id/dialog_ex_btn_hide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_ex_btn_ok_selector"
+            android:src="@drawable/dialog_ex_btn_hide" />
+    </LinearLayout>
+    
+    <!-- 软件下载标题 - 精品软件点击下载 -->
+    <ImageView
+        android:id="@+id/dialog_ex_more_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/dialog_ex_btn_hide_container"
+        android:src="@drawable/dialog_ex_more" />
+    
+    <!-- Grid布局的软件icon -->
+    <GridView
+        android:id="@+id/dialog_ex_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/dialog_ex_more_title"
+        android:columnWidth="62dp"
+        android:gravity="center"
+        android:horizontalSpacing="8dp"
+        android:numColumns="3"
+        android:padding="8dp"
+        android:stretchMode="columnWidth"
+        android:listSelector="@drawable/dialog_ex_grid_item_selector"
+        android:verticalSpacing="8dp" />
+
+</RelativeLayout>

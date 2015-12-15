@@ -1,0 +1,4 @@
+<resources>
+    <!-- 适配分辨率大于480*854的设备 -->
+    <dimen name="course_text_margin">25dp</dimen>
+</resources>

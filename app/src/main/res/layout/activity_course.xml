@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/course_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+
+    <!-- 整个锁屏界面的背景 -->
+    <ImageView
+        android:id="@+id/course_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/lock_bg_default" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/course_top_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/course_text_margin"
+            android:layout_marginTop="@dimen/course_text_margin"
+            android:orientation="vertical">
+
+            <TextSwitcher
+                android:id="@+id/course_tip"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextSwitcher
+                android:id="@+id/course_counter"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/course_text_margin" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/course_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/course_top_container"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/lock_scan_circle_base">
+
+            <ImageView
+                android:id="@+id/course_scan_circle_cover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/lock_scan_circle_cover" />
+
+            <ImageView
+                android:id="@+id/course_scan_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/lock_scan_grid" />
+
+            <ImageView
+                android:id="@+id/course_scan_fingerprint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/lock_scan_fingerprint" />
+
+            <FrameLayout
+                android:id="@+id/course_scan_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/lock_scan_frame">
+
+                <View
+                    android:id="@+id/course_scan_scaning_line"
+                    android:layout_width="196dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/primary_green"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/course_bottom_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/course_scan">
+
+            <TextView
+                android:id="@+id/course_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="我不是新手"
+                android:textColor="#444"
+                android:textSize="18sp" />
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

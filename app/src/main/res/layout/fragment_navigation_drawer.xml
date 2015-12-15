@@ -1,0 +1,49 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navigation_drawable_background">
+
+    <LinearLayout
+        android:id="@+id/drawer_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/drawer_head"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/drawer_head_height">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/drawer_logo_bg" />
+
+            <ImageView
+                android:id="@+id/logo_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/small_logo" />
+
+            <TextView
+                android:id="@+id/logo_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:layout_alignBottom="@id/logo_img"
+                android:layout_toRightOf="@id/logo_img"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

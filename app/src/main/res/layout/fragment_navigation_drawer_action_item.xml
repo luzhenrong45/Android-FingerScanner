@@ -1,0 +1,26 @@
+<!-- Navigation Drawer Action Item --><!-- 了解View框架的各种事件属性，如clickable, focusable等 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/drawer_action_item_background"
+    android:clickable="true"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/drawer_action_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/drawer_action_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="78dp"
+        android:layout_marginStart="78dp"
+        android:focusable="false"
+        android:text="@string/drawer_action_share" />
+
+</RelativeLayout>

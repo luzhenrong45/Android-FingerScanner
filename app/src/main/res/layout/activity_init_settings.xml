@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="30dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="30dp">
+
+    <TextView
+        android:id="@+id/init_settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/init_settings_title_default"
+        android:textColor="#ff42bd41"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:text="确保「指纹解锁」可以正常运行"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/init_settings_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/init_settings_btn_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rectangle_btn_selector_green"
+        android:text="完成"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

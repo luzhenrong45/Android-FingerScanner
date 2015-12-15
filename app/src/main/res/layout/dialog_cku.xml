@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_cku_bg"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp" >
+
+    <!-- 标题 - -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_cku_title_bg" >
+
+        <TextView
+            android:id="@+id/dialog_cku_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:textColor="#006FD3"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <!-- 软件介绍 -->
+
+        <LinearLayout
+            android:id="@+id/dialog_cku_intros"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <!-- banner图片，用于占位 -->
+
+        <ImageView
+            android:id="@+id/dialog_cku_banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dialog_cku_banner_01" />
+
+        <!-- 按钮 - 立即更新 -->
+
+        <Button
+            android:id="@+id/dialog_cku_btn_download"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/dialog_cku_btn_download_bg"
+            android:text="@string/dialog_cku_btn_download_text"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- 水平分隔符 -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/dialog_update_line_separator" />
+
+    <!-- 底部按钮 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- 按钮 - 今日不再推荐 -->
+
+        <Button
+            android:id="@+id/dialog_cku_btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_cku_btn_bottom_bg"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/dialog_cku_btn_bottom_left_text"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- 分隔符 -->
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/dialog_update_line_separator" />
+
+        <!-- 按钮 - 更多应用 -->
+
+        <Button
+            android:id="@+id/dialog_cku_btn_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:background="@drawable/dialog_cku_btn_bottom_bg"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/dialog_cku_btn_bottom_right_text"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

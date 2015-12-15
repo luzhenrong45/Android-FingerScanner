@@ -1,0 +1,47 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="MySettingBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="MySettingTheme" parent="MySettingBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+        <!-- PreferenceCategory的style引用的是该属性的值 -->
+        <item name="android:listSeparatorTextViewStyle">@style/MyListSeparator</item>
+        <item name="android:listDivider">@android:color/transparent</item>
+        <!-- 注意：PreferenceChild的minHight引用的是这个属性的值 -->
+        <item name="android:listPreferredItemHeight">54dip</item>
+        <item name="android:checkboxStyle">@style/MyCheckBox</item>
+    </style>
+
+    <!-- 公用的Style -->
+    <!-- 对于没有public的style，只能使用android:attrXXX -->
+    <!-- 见这里：http://stackoverflow.com/a/6297757/4026052 -->
+    <style name="MyListSeparator" parent="@android:attr/listSeparatorTextViewStyle">
+        <item name="android:background">@drawable/list_section_divider_green</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FF3A9F29</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:paddingBottom">8dip</item>
+    </style>
+
+    <style name="MyCheckBox" parent="@android:Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/my_checkbox</item>
+    </style>
+
+</resources>

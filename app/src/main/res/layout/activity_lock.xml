@@ -1,0 +1,256 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lock_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+
+    <FrameLayout
+        android:id="@+id/lock_inner_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 整个锁屏界面的背景 -->
+        <ImageView
+            android:id="@+id/lock_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lock_bg_default" />
+
+        <!-- 解锁错误时的红色背景 -->
+        <ImageView
+            android:id="@+id/lock_warning_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:scaleType="fitXY"
+            android:src="@drawable/lock_warning_frame" />
+
+        <!-- 实际的锁屏布局 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/lock_top_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/lock_clock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <mobi.thinkchange.android.fingerscannercn.view.MyTextDate
+                            android:id="@+id/lock_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/primary_green"
+                            android:textSize="28sp" />
+
+                        <TextView
+                            android:id="@+id/lock_weather_separator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="@color/primary_green"
+                            android:textSize="28sp" />
+
+                        <TextView
+                            android:id="@+id/lock_temperature"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="@color/primary_green"
+                            android:textSize="28sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/lock_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/lock_scan_circle_base">
+
+                <ImageView
+                    android:id="@+id/lock_scan_circle_cover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/lock_scan_circle_cover" />
+
+                <ImageView
+                    android:id="@+id/lock_scan_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/lock_scan_grid" />
+
+                <ImageView
+                    android:id="@+id/lock_scan_fingerprint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/lock_scan_fingerprint" />
+
+                <FrameLayout
+                    android:id="@+id/lock_scan_frame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/lock_scan_frame">
+
+                    <View
+                        android:id="@+id/lock_scan_scaning_line"
+                        android:layout_width="196dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/primary_green"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/lock_warning_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:alpha="0"
+                    android:text="ACCESS DENIED"
+                    android:textColor="#FFFF0000"
+                    android:textSize="26sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/lock_bottom_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7">
+
+                <com.romainpiel.shimmer.ShimmerTextView
+                    android:id="@+id/lock_shimmer_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Please scan your fingerprint"
+                    android:textColor="#444"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <com.romainpiel.titanic.library.TitanicTextView
+                    android:id="@+id/lock_titanic_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Please scan your fingerprint"
+                    android:textColor="@color/primary_green"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <!-- 紧急解锁面板 -->
+        <FrameLayout
+            android:id="@+id/lock_emergency_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#b4000000"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="40dp"
+                android:paddingTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/lock_emergency_icon"
+                    android:gravity="center_vertical"
+                    android:text="无法解锁"
+                    android:textColor="@color/primary_green"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="你可以先解锁再查看帮助或者直接解锁"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/lock_emergency_unlock_and_help"
+                    style="@style/LockEmergencyUnlockBtnStyle"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/rectangle_btn_selector_green"
+                    android:text="解锁后查看帮助" />
+
+                <Button
+                    android:id="@+id/lock_emergency_unlock"
+                    style="@style/LockEmergencyUnlockBtnStyle"
+                    android:background="@drawable/rectangle_btn_selector_blue"
+                    android:text="本次直接解锁" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <!-- 连续3次解锁失败的错误提示 -->
+        <TextView
+            android:id="@+id/lock_fake_error_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="70dp"
+            android:background="#78000000"
+            android:padding="10dp"
+            android:text="错误提示"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</FrameLayout>

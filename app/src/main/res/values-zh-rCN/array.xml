@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- time format -->
+    <string-array name="time_format">
+        <item>12小时</item>
+        <item>24小时</item>
+    </string-array>
+
+</resources>

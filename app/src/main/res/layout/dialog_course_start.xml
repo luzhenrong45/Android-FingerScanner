@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:paddingTop="30dp"
+    android:paddingBottom="20dp" >
+
+    <ImageView
+        android:id="@+id/dialog_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_dlg_lock" />
+
+    <LinearLayout
+        android:id="@+id/text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_img"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这是一款娱乐软件"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="无法真正识别指纹"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_tc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="接下来教您如何解锁"
+        android:textColor="@color/gray"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_tc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/round_button_selector"
+        android:gravity="center"
+        android:text="@android:string/ok"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

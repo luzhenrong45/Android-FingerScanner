@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:paddingTop="30dp"
+    android:paddingBottom="20dp" >
+
+    <ImageView
+        android:id="@+id/dialog_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_dlg_ok" />
+
+    <LinearLayout
+        android:id="@+id/text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_img"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="可在【设置】中修改"
+            android:textColor="@color/gray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="解锁条件（次数）"
+            android:textColor="@color/gray"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/round_button_selector"
+        android:gravity="center"
+        android:text="我知道了"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

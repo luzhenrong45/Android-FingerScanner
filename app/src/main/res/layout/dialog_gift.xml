@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dialog_cku_bg"
+    android:padding="0dp" >
+
+    <!-- 标题 - -->
+
+    <RelativeLayout
+        android:id="@+id/dialog_gift_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#0067c4" >
+
+        <TextView
+            android:id="@+id/dialog_gift_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:text="@string/dialog_gift_title_text"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/dialog_gift_title_btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dialog_common_btn_close_bg" />
+    </RelativeLayout>
+
+    <!-- 底部的4个广告图标 -->
+
+    <LinearLayout
+        android:id="@+id/dialog_gift_more"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dialog_gift_more_bg"
+        android:orientation="horizontal" >
+
+        <include
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            layout="@layout/dialog_gift_more_item" />
+
+        <!-- 水平分隔符 -->
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:background="#555555" />
+
+        <include
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            layout="@layout/dialog_gift_more_item" />
+
+        <!-- 水平分隔符 -->
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:background="#555555" />
+
+        <include
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            layout="@layout/dialog_gift_more_item" />
+
+        <!-- 水平分隔符 -->
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:background="#555555" />
+
+        <include
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            layout="@layout/dialog_gift_more_item" />
+    </LinearLayout>
+
+    <!-- 主体内容 -->
+
+    <ScrollView
+        android:id="@+id/dialog_gift_body"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dialog_gift_more"
+        android:layout_below="@id/dialog_gift_title" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <!-- 大icon -->
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="11" >
+
+                    <ImageView
+                        android:id="@+id/dialog_gift_app_icon"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp" >
+
+                    <!-- 软件名 -->
+
+                    <TextView
+                        android:id="@+id/dialog_gift_app_title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <!-- Rating Bar -->
+
+                    <RatingBar
+                        android:id="@+id/dialog_gift_app_rating"
+                        style="@style/TCURatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:stepSize="0.5" />
+
+                    <!-- 软件大小 -->
+
+                    <TextView
+                        android:id="@+id/dialog_gift_app_size_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#118ff5"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp" >
+
+                <!-- 软件介绍 -->
+
+                <LinearLayout
+                    android:id="@+id/dialog_gift_intros"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp" >
+                </LinearLayout>
+
+                <!-- 按钮 - 立即更新 -->
+
+                <Button
+                    android:id="@+id/dialog_gift_btn_download"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/dialog_gift_btn_download_bg"
+                    android:text="@string/dialog_gift_btn_download_text"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

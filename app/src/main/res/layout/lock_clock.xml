@@ -1,0 +1,11 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <mobi.thinkchange.android.fingerscannercn.view.MyTextClock
+        android:id="@+id/lock_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="64sp"
+        android:textColor="@color/primary_green" />
+
+</merge>

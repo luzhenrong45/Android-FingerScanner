@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:background="@android:color/transparent" >
+
+    <ImageView
+        android:id="@+id/dialog_gift_more_item_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"
+        android:src="@drawable/dialog_gift_more_item_indicator"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/dialog_notifycku_more_item_image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_gift_more_item_indicator"
+        android:layout_centerHorizontal="true" 
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="6dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/dialog_notifycku_more_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_notifycku_more_item_image"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+</RelativeLayout>

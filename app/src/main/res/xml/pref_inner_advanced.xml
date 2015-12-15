@@ -1,0 +1,17 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 开机自启动 -->
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="cb_autostart"
+        android:summary="@string/cb_autostart_summary"
+        android:title="@string/cb_autostart_title" />
+
+    <!-- 软件更新提醒 -->
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="tcu_notify_cku"
+        android:summary="@string/cb_tcu_notify_cku_summary"
+        android:title="@string/cb_tcu_notify_cku_title" />
+
+</PreferenceScreen>

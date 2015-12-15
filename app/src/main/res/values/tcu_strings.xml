@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!-- dialog update -->
+    <string name="dialog_update_btn_update_text">立即更新</string>
+    <string name="dialog_update_btn_bottom_left_text">退出时更新</string>
+    <string name="dialog_update_btn_bottom_right_text">以后再说</string>
+    <string name="dialog_update_exitupdate_toast">更新文件已下载完成</string>
+
+    <!-- dialog cku -->
+    <string name="dialog_cku_btn_download_text">免费下载</string>
+    <string name="dialog_cku_btn_bottom_left_text">取消</string>
+    <string name="dialog_cku_btn_bottom_right_text">更多应用</string>
+
+    <!-- dialog gift -->
+    <string name="dialog_gift_title_text">软件推荐</string>
+    <string name="dialog_gift_btn_download_text">免费下载</string>
+
+    <!-- dialog notifycku -->
+    <string name="dialog_notifycku_more_title_text">更多应用（点击下载）</string>
+    <string name="dialog_notifycku_btn_update_text">立即更新</string>
+
+    <!-- dialog list -->
+    <string name="dialog_list_title_text">软件推荐</string>
+
+    <!-- dialog own -->
+    <string name="dialog_own_title_text">ThinkChange应用切换</string>
+
+    <!-- dialog wx -->
+    <string name="dialog_wx_btn_follow_text">关注我们</string>
+    <string name="dialog_wx_btn_cancel_text">不再提示</string>
+</resources>

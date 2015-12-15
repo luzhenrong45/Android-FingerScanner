@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">指纹解锁</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_help">解锁教程</string>
+
+    <!-- Drawer Action Items -->
+    <string name="drawer_action_share">分享应用</string>
+    <string name="drawer_action_about_us">关于我们</string>
+    <string name="drawer_action_feedback">意见反馈</string>
+    <string name="drawer_action_our_app">我们的APP</string>
+
+    <!-- 反馈界面相关 -->
+    <string name="feedback_text">感谢使用指纹解锁！如果您在使用过程中遇到任何问题或有建议都欢迎反馈给我们。</string>
+    <string name="feedback_contact">联系方式(可选)</string>
+    <string name="feedback_contact_hit">QQ/邮箱</string>
+    <string name="feedback_contet">反馈内容</string>
+    <string name="feedback_contet_hit">反馈内容</string>
+    <string name="feedback_button">提交反馈</string>
+    <string name="warning_feedback_contact_length_30">联系方式文字过长</string>
+    <string name="warning_feedback_content_null">请输入反馈内容</string>
+    <string name="warning_feedback_content_length_100">反馈内容文字过长</string>
+    <string name="feedback_successful">反馈提交成功</string>
+    <string name="network_not_avaliable">连接网络失败，请检查网络设置</string>
+
+    <!-- 关于界面 -->
+    <string name="about_content">用“指纹”解锁你的手机!</string>
+    <string name="website">我们的网站</string>
+
+    <!-- 主界面 -->
+    <string name="show_lock">显示锁屏</string>
+    <string name="settings">设置</string>
+    <string name="more">更多</string>
+
+    <!-- share intent -->
+    <string name="share_intent_subject">安卓应用分享</string>
+    <string name="share_intent_text">用指纹解锁手机？发现一个好玩的安卓应用，免费下载：http://cn.anruanjian.com/soft/detail/499?stype1=share_20&amp;stype2=fignerscanner_65</string>
+
+    <!-- category - 解锁设置 -->
+    <string name="pref_key_cate_unlock_title">解锁设置</string>
+
+    <!-- category - 更多设置 -->
+    <string name="pref_key_cate_more_title">更多设置</string>
+
+    <!-- preference - 锁屏开关 -->
+    <string name="pref_lock_switch_title">锁屏开关</string>
+
+    <!-- preference - 预览锁屏界面 -->
+    <string name="pref_key_preview_title">预览锁屏界面</string>
+
+    <!-- preference - 解锁教程 -->
+    <string name="pref_key_help_title">解锁教程</string>
+
+    <!-- preference - 个性设置 -->
+    <string name="pref_key_customize_title">个性设置</string>
+
+    <!-- preference - 高级设置 -->
+    <string name="pref_key_advanced_title">高级设置</string>
+
+    <!-- preference - 初始设置 -->
+    <string name="pref_key_init_settings_title">初始设置</string>
+
+    <string name="pref_key_sound_and_vibration">声音振动</string>
+    <string name="pref_key_lock_display">锁屏显示</string>
+
+    <!-- preference - Unlock Condition(times) -->
+    <string name="unlock_times_title">解锁条件(次数)</string>
+    <string name="unlock_times_dialog_message">当前次数:</string>
+    <string name="unlock_times_summary">设置扫描几次后放开手指可解锁手机</string>
+
+    <!-- preference - Auto Start -->
+    <string name="cb_autostart_title">开机自启动</string>
+    <string name="cb_autostart_summary">手机开机时将自动启动指纹解锁</string>
+
+    <!-- preference - App Update -->
+    <string name="cb_tcu_notify_cku_title">软件更新提醒</string>
+    <string name="cb_tcu_notify_cku_summary">当软件有新版本时在消息栏通知提示</string>
+
+    <!-- preference - 扫描时提示音 -->
+    <string name="cb_scanning_sound_title">扫描时提示音</string>
+    <string name="cb_scanning_sound_summary">扫描过程中播放滴滴提示音</string>
+
+    <!-- preference - Vibrate Assistance -->
+    <string name="cb_vibrate_title">扫描时震动</string>
+    <string name="cb_vibrate_summary">扫描时手机进行震动解锁提示</string>
+
+    <!-- preference - Choose Date Format -->
+    <string name="date_format_title">日期格式</string>
+    <string name="date_format_summary">选择锁屏界面的日期格式</string>
+
+    <!-- preference - Choose Time Format -->
+    <string name="time_format_title">时间格式</string>
+    <string name="time_format_summary">选择锁屏界面的时间格式</string>
+
+    <!-- preference - 天气预报 -->
+    <string name="cb_weather_title">天气预报</string>
+    <string name="cb_weather_summary">锁屏界面显示当前地的天气预报</string>
+
+    <!-- preference - 解锁成功动画 -->
+    <string name="pref_key_lock_anim_type_title">解锁动画</string>
+    <string name="pref_key_lock_anim_type_summary">选择解锁成功播放的动画样式</string>
+
+    <!-- preference - 解锁文字动画 -->
+    <string name="pref_key_lock_text_anim_type_title">文字动画</string>
+    <string name="pref_key_lock_text_anim_type_summary">选择解锁文字的动画样式</string>
+
+    <string name="more_link">http://cn.anruanjian.com/?stype1=about_20&amp;stype2=fingerscanner_65</string>
+
+</resources>

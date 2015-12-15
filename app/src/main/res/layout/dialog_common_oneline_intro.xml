@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <!-- 文字左边的蓝色圆点 -->
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/dialog_common_oneline_intro_dot_bg" />
+
+    <!-- TODO 应限制intro文字的长度 -->
+    <!-- 介绍文字 -->
+
+    <TextView
+        android:id="@+id/dialog_common_oneline_intro_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:lines="1"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

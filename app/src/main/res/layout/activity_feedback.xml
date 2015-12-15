@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white">
+
+    <!-- 内容 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="12dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/feedback_text"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/feedback_contact"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/feedback_contact"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:hint="@string/feedback_contact_hit"
+            android:padding="12dp"
+            android:textColor="#606060"
+            android:textColorHint="#AAAAAA"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/feedback_contet"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="5dip"
+            android:layout_weight="1">
+
+            <!-- 反馈内容 -->
+
+            <ScrollView
+                android:id="@+id/scrollView_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <RelativeLayout
+                    android:id="@+id/feedback_content_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <EditText
+                        android:id="@+id/feedback_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/feedback_contet_hit"
+                        android:padding="12dp"
+                        android:textColor="#606060"
+                        android:textColorHint="#AAAAAA"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <!-- 底部按钮 -->
+        <Button
+            android:id="@+id/feedback_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/round_button_selector"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/feedback_button"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</RelativeLayout>

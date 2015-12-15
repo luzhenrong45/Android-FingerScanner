@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- Drawer Action Item IDs -->
+    <item name="drawer_action_share" type="id" />
+    <item name="drawer_action_about_us" type="id" />
+    <item name="drawer_action_feedback" type="id" />
+    <item name="drawer_action_our_app" type="id" />
+
+    <item name="drawer_action_divider" type="id"></item>
+
+    <!-- Init Setting Item IDs -->
+    <item name="init_settings_item_floating_window" type="id" />
+    <item name="init_settings_item_auto_start" type="id" />
+    <item name="init_settings_item_system_lock" type="id" />
+</resources>

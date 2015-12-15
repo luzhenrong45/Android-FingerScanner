@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="mobi.thinkchange.android.fingerscannercn">
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 使锁屏界面在其它窗口之上 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- TCU 3.12 所需权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 判断是否有网络 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 向sd卡中写文件 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 百度定位需要的权限 -->
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位，GPS定位较慢，暂时不需要 -->
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-sdk tools:overrideLibrary="com.romainpiel.shimmer,com.romainpiel.titanic.library" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="TC_CHANNEL" android:value="${TC_CHANNEL_VALUE}" />
+
+        <!-- key:开发者申请的key -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="YWqbksTE71PhrDwyBFGQaSyH" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LowVersionWarningActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".CourseActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".InitSettingsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".FloatingTipActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.MainActivity" />
+
+        <activity
+            android:name=".LockActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:process=":lockscreen"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".lockscreen"
+            android:theme="@style/AppTheme.Translucent" />
+
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/drawer_action_about_us"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mobi.thinkchange.android.fingerscannercn.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/settings"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Preference">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mobi.thinkchange.android.fingerscannercn.MainActivity" />
+        </activity>
+        <activity
+            android:name=".FeedbackActivity"
+            android:label="@string/drawer_action_feedback"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mobi.thinkchange.android.fingerscannercn.MainActivity" />
+        </activity>
+
+        <service
+            android:name=".SleepService"
+            android:exported="false"
+            android:process=":lockservice" />
+
+        <service android:name=".location.MyLocationService"
+            android:exported="false"
+            android:process=":lockscreen" >
+        </service>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <receiver
+            android:name=".BootReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:process=":lockscreen">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

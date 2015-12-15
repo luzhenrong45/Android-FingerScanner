@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="8dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- icon -->
+
+        <ImageView
+            android:id="@+id/dialog_list_more_item_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:paddingLeft="4dp"
+            android:scaleType="fitCenter" />
+
+        <!-- 软件介绍整体内容 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:paddingLeft="10dp" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <!-- 软件名 -->
+
+                <TextView
+                    android:id="@+id/dialog_list_more_item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#383838"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Rating Bar -->
+
+                <RatingBar
+                    android:id="@+id/dialog_list_more_item_rating"
+                    style="@style/TCURatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="4.5"
+                    android:stepSize="0.5" />
+            </RelativeLayout>
+
+            <!-- 软件大小 -->
+
+            <TextView
+                android:id="@+id/dialog_list_more_item_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0893FC"
+                android:textSize="14sp" />
+
+            <!-- 一行广告语 -->
+
+            <TextView
+                android:id="@+id/dialog_list_more_item_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- 竖直分隔符 -->
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/dialog_update_line_separator" />
+
+        <!-- 右侧下载按钮 -->
+
+        <ImageView
+            android:id="@+id/dialog_list_more_item_download"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/dialog_list_item_btn_download_bg" />
+    </LinearLayout>
+
+</LinearLayout>

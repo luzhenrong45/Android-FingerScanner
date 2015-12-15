@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    	参考值：DrawerLayout动画播放的时间长度为600，但是感觉等待的时间有些长就改短一些
+    	http://levibostian.com/android-navigation-drawer-animation-duration/
+     -->
+    <item name="ref_drawer_anim_duration" type="integer">300</item>
+
+</resources>

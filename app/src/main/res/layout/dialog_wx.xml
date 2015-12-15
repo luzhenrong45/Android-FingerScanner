@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_update_bg"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <!-- 标题 - -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/dialog_wx_title_bg" >
+
+        <TextView
+            android:id="@+id/dialog_wx_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#3C9100"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <!-- 软件介绍 -->
+
+        <LinearLayout
+            android:id="@+id/dialog_wx_intros"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <!-- 软件更新图片 -->
+
+        <ImageView
+            android:id="@+id/dialog_wx_banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dialog_wx_banner" />
+
+        <!-- 按钮 - 关注我们 -->
+
+        <Button
+            android:id="@+id/dialog_wx_btn_follow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/dialog_gift_btn_download_bg"
+            android:text="@string/dialog_wx_btn_follow_text"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- 按钮 - 不再提示 -->
+
+        <Button
+            android:id="@+id/dialog_wx_btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/dialog_wx_btn_cancel"
+            android:text="@string/dialog_wx_btn_cancel_text"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

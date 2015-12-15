@@ -1,0 +1,67 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 声音振动 -->
+    <PreferenceCategory android:title="@string/pref_key_sound_and_vibration">
+        <!-- 扫描时提示音 -->
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="cb_scanning_sound"
+            android:summary="@string/cb_scanning_sound_summary"
+            android:title="@string/cb_scanning_sound_title" />
+
+        <!-- 扫描时振动 -->
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="cb_vibrate"
+            android:summary="@string/cb_vibrate_summary"
+            android:title="@string/cb_vibrate_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_key_lock_display">
+        <!-- 日期格式 -->
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/date_format"
+            android:entryValues="@array/date_format_values"
+            android:key="date_format"
+            android:summary="@string/date_format_summary"
+            android:title="@string/date_format_title" />
+
+        <!-- 时间格式 -->
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/time_format"
+            android:entryValues="@array/time_format_values"
+            android:key="time_format"
+            android:summary="@string/time_format_summary"
+            android:title="@string/time_format_title" />
+
+        <!-- 天气预报 -->
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="cb_weather"
+            android:summary="@string/cb_weather_summary"
+            android:title="@string/cb_weather_title" />
+
+        <!-- 解锁成功动画 -->
+        <ListPreference
+            android:defaultValue="2"
+            android:entries="@array/pref_key_lock_anim_type_entries"
+            android:entryValues="@array/pref_key_lock_anim_type_values"
+            android:key="pref_key_lock_anim_type"
+            android:summary="@string/pref_key_lock_anim_type_summary"
+            android:title="@string/pref_key_lock_anim_type_title" />
+
+        <!-- 解锁文字动画 -->
+        <!--<ListPreference
+            android:defaultValue="0"
+            android:entries="@array/pref_key_lock_text_anim_type_entries"
+            android:entryValues="@array/pref_key_lock_text_anim_type_values"
+            android:key="pref_key_lock_text_anim_type"
+            android:summary="@string/pref_key_lock_text_anim_type_summary"
+            android:title="@string/pref_key_lock_text_anim_type_title" />-->
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
